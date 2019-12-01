@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "9d1a1f41-e41c-446e-84d8-7ab84bc52558",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "QQ截图20191201141708": {
+      "ver": "1.0.4",
+      "uuid": "055cae63-45b9-4ac8-bcff-78ca38fb4e28",
+      "rawTextureUuid": "9d1a1f41-e41c-446e-84d8-7ab84bc52558",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 358,
+      "height": 504,
+      "rawWidth": 358,
+      "rawHeight": 504,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
