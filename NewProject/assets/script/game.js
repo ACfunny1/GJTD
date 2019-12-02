@@ -2,16 +2,16 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        pool: null,
-        guaiwuPrefab: cc.Prefab,
-        parentNode: cc.Node
+        pool: null,//怪物对象池
+        guaiwuPrefab: cc.Prefab,//怪物预制体
+        parentNode: cc.Node,//怪物出现的父节点
+        initCount: 0//怪物对象池数量
     },
 
     onLoad() {
         GameCtl = this
         this.pool = new cc.NodePool()
-        let initCount = 20
-        for (let i = 0; i < initCount; i++) {
+        for (let i = 0; i < this.initCount; i++) {
             let enemy = cc.instantiate(this.guaiwuPrefab)
             this.pool.put(enemy)
         }
@@ -30,10 +30,7 @@ cc.Class({
         enemy.parent = this.parentNode
         enemy.position = cc.v2(390, -568)
         guaiwuPrefabCtl.move(enemy)
-        cc.log(this.pool)
     },
-    killGuaiwu(enemy) {
-        this.pool.put(enemy)
-    },
+
     // update (dt) {},
 });
